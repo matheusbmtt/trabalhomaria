@@ -1,0 +1,272 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Base */
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #0d1b1e, #1e2a3a);
+    color: #e6e6f0;
+    min-height: 100vh;
+    padding-top: 80px;
+  }
+  
+  /* Header */
+  header {
+    background-color: rgba(13, 27, 30, 0.95);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 2em;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  }
+  
+  header h1 {
+    font-size: 1.8rem;
+    color: #b7f5d7;
+  }
+  
+  nav ul {
+    display: flex;
+    list-style: none;
+    gap: 2em;
+  }
+  
+  nav ul li a {
+    color: #d0c1ff;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+  }
+  
+  nav ul li a:hover,
+  nav ul li a.active {
+    color: #ffffff;
+  }
+  
+  .banner img {
+    width: 100%;
+    height: 500px; /* ou 400px */
+    object-fit: cover;
+    object-position: center top;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
+  }
+  
+  
+  /* Biografia */
+  .biografia {
+    max-width: 1000px;
+    margin: 2em auto;
+    display: flex;
+    gap: 2em;
+    background: rgba(29, 39, 49, 0.85);
+    padding: 2em;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    color: #e6e6f0;
+  }
+  
+  .biografia img {
+    width: 280px;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    flex-shrink: 0;
+  }
+  
+  .biografia .texto {
+    flex: 1;
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
+  
+  .biografia ul {
+    margin-top: 0.5em;
+    list-style: inside disc;
+  }
+  
+  /* Álbum Detalhe */
+  .album-detail {
+    max-width: 800px;
+    margin: 2em auto;
+    padding: 2em;
+    background: rgba(29, 39, 49, 0.85);
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    text-align: center;
+  }
+  
+  .album-detail h2 {
+    margin-bottom: 1em;
+    font-size: 2rem;
+    color: #cce1f2;
+  }
+  
+  .album-detail img {
+    width: 70%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 1.5em;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  }
+  
+  .album-detail ol {
+    text-align: left;
+    margin: 0 auto;
+    max-width: 500px;
+    padding-left: 1em;
+    line-height: 2;
+    color: #f0f8ff;
+  }
+  
+  /* Álbum Cards */
+  .albums {
+    max-width: 1100px;
+    margin: 2em auto 4em;
+    padding: 0 1em;
+  }
+  
+  .albums h2 {
+    margin-bottom: 1em;
+    font-size: 2rem;
+    text-align: center;
+    color: #b7f5d7;
+    text-shadow: 1px 1px 3px #0b1516;
+  }
+  
+  .cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+    justify-content: center;
+  }
+  
+  .albums a.card {
+    background: rgba(190, 225, 245, 0.9);
+    color: #102830;
+    border-radius: 15px;
+    text-align: center;
+    width: 200px;
+    text-decoration: none;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+  }
+  
+  .albums a.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.45);
+  }
+  
+  .albums a.card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 0.75em;
+    flex-shrink: 0;
+  }
+  
+  .albums a.card h3 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #102830;
+    text-shadow: 1px 1px 2px #fff3db;
+  }
+  
+  /* Formulário */
+  form label {
+    font-weight: bold;
+  }
+  
+  form input,
+  form textarea {
+    width: 100%;
+    padding: 0.5em;
+    margin-bottom: 1em;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+  }
+  
+  form button {
+    background: #6a95af;
+    color: #fff;
+    border: none;
+    padding: 0.75em 1.5em;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s ease;
+  }
+  
+  form button:hover {
+    background: #517c98;
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 1.2em 1em;
+    margin-top: auto;
+    font-size: 0.9rem;
+    color: #cce1f2;
+  }
+  
+  footer a {
+    color: #cce1f2;
+    text-decoration: none;
+    font-weight: 600;
+  }
+  
+  footer a:hover {
+    color: #ffffff;
+  }
+  
+  /* Responsividade */
+  @media (max-width: 900px) {
+    .biografia {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .biografia img {
+      width: 100%;
+      max-width: 320px;
+      height: auto;
+    }
+  
+    .biografia .texto {
+      font-size: 1rem;
+    }
+  
+    .cards-container {
+      justify-content: center;
+    }
+  }
+  
+  @media (max-width: 500px) {
+    nav ul {
+      flex-direction: column;
+      gap: 1em;
+    }
+  
+    .albums a.card {
+      width: 100%;
+      max-width: 320px;
+    }
+  }
+  
